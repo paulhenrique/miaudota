@@ -12,11 +12,13 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/material": "^5.11.13",
+    "@types/react-helmet": "^6.1.6",
     "final-form": "^4.20.9",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-final-form": "^6.5.9",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.8.0"
   },
   "devDependencies": {

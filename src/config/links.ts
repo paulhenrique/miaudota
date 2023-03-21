@@ -13,7 +13,7 @@ export const titles = {
   home: "Início",
   quemSomos: "Quem Somos",
   informacoesImportantes: "Informações Importantes",
-  miaumigos: "miaumigos",
+  miaumigos: "MiauMigos",
   queroAdotar: "Quero adotar",
 };
 
