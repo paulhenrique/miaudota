@@ -1,7 +1,15 @@
 import { Box, styled } from "@mui/material";
 import { colors } from "../../theme/ThemeProvider";
 
-export const StyledForm = styled("form")`
+export interface StyledFormProps
+  extends React.DetailedHTMLProps<
+    React.FormHTMLAttributes<HTMLFormElement>,
+    HTMLFormElement
+  > {}
+
+export const StyledForm: (
+  props: StyledFormProps
+) => JSX.Element | null = styled("form")`
   background: ${colors.neutral1};
   display: flex;
   flex-direction: column;

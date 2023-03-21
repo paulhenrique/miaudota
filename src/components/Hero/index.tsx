@@ -25,18 +25,15 @@ const Hero = () => {
                   <img
                     src={info.icon}
                     alt={info.iconLabel}
-                    tabIndex={-1}
                     role="presentation"
                   />
                 </div>
               </div>
               <div>
-                <Typography variant="body2" tabIndex={-1}>
+                <Typography variant="body2">
                   <strong>{info.title}</strong>
                 </Typography>
-                <Typography variant="body2" tabIndex={-1}>
-                  {info.content}
-                </Typography>
+                <Typography variant="body2">{info.content}</Typography>
               </div>
             </Box>
           ))}

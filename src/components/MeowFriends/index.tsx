@@ -49,9 +49,9 @@ const MeowFriends = () => {
                   alt={cat.alt}
                   width="360px"
                   height={`${360 + 66}px`}
-                  useMap={`#${_.camelCase(cat.name)}`}
+                  // useMap={`#${_.camelCase(cat.name)}`}
                 />
-                <map id={_.camelCase(cat.name)} name={_.camelCase(cat.name)}>
+                {/* <map id={_.camelCase(cat.name)} name={_.camelCase(cat.name)}>
                   {cat.points.map((point) => (
                     <area
                       key={point.name}
@@ -66,8 +66,8 @@ const MeowFriends = () => {
                       href={`/${point.name}`}
                     />
                   ))}
-                </map>
-                <Typography>
+                </map> */}
+                <Typography component="h2">
                   <PurpleText>
                     <b>{cat.name}</b>
                   </PurpleText>{" "}

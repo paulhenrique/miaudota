@@ -14,7 +14,7 @@ const Header = () => {
             <Typography className="headerText" variant="h1">
               adote um <br /> amigo <span className="right"> de bigodes!</span>
             </Typography>
-            <Typography variant="h3" className="subtitle">
+            <Typography variant="h3" component="h2" className="subtitle">
               Você pode fazer a diferença na vida de um felino. Dê uma chance
               para o amor, dê uma chance a um gatinho!
             </Typography>
