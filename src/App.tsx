@@ -7,6 +7,7 @@ import ThemeProvider from "./theme/ThemeProvider";
 import SubHeader from "./components/SubHeader";
 import "./assets/style/global.css";
 import MeowFriends from "./components/MeowFriends";
+import ScrollHandler from "./components/ScrollHandler";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <Hero />
       <MeowFriends />
       <Footer />
+      <ScrollHandler />
     </ThemeProvider>
   );
 };
