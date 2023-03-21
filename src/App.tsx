@@ -8,6 +8,7 @@ import SubHeader from "./components/SubHeader";
 import "./assets/style/global.css";
 import MeowFriends from "./components/MeowFriends";
 import ScrollHandler from "./components/ScrollHandler";
+import SimpleModal from "./components/SimpleModal";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <MeowFriends />
       <Footer />
       <ScrollHandler />
+      <SimpleModal />
     </ThemeProvider>
   );
 };

@@ -2,10 +2,14 @@ import { Button, TextField } from "@mui/material";
 import PawIcon from "../../assets/icons/paw.svg";
 import { StyledForm } from "./StyledForm";
 import { Form as FinalForm, Field } from "react-final-form";
+import { EVENTS, appEmitter } from "../../events";
 
 export const Form = () => {
   const handleSubmitForm = (fields: any) => {
-    alert("Obrigado pelo seu contato, em breve retornaremos!");
+    appEmitter.emit(EVENTS.OPEN_MODAL, {
+      title: "Seu formulário foi enviado!",
+      text: "Essa página de exemplo foi desenvolvida para o Chapter especial de acessibilidade Web do CPQD, não há real contato com a empresa de adoção.",
+    });
   };
 
   return (
@@ -55,6 +59,7 @@ export const Form = () => {
                 type="email"
                 required
                 error={meta.error && meta.touched}
+                helperText="Campo obrigatório"
                 {...input}
               />
             )}

@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import { PurpleText } from "../PurpleText";
 import Container from "../Container";
 import { StyledHero } from "./StyledHero";
@@ -17,27 +17,29 @@ const Hero = () => {
             o que saber antes de adotar
           </Typography>
         </div>
-        <div className="contentItems">
+        <Grid container spacing="50px">
           {informations.map((info) => (
-            <Box key={info.title} className="containerInformation">
-              <div>
-                <div className="contentIcon">
-                  <img
-                    src={info.icon}
-                    alt={info.iconLabel}
-                    role="presentation"
-                  />
+            <Grid item key={info.title} xs={12} lg={6}>
+              <Box className="containerInformation">
+                <div>
+                  <div className="contentIcon">
+                    <img
+                      src={info.icon}
+                      alt={info.iconLabel}
+                      role="presentation"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div>
-                <Typography variant="body2">
-                  <strong>{info.title}</strong>
-                </Typography>
-                <Typography variant="body2">{info.content}</Typography>
-              </div>
-            </Box>
+                <div>
+                  <Typography variant="body2">
+                    <strong>{info.title}</strong>
+                  </Typography>
+                  <Typography variant="body2">{info.content}</Typography>
+                </div>
+              </Box>
+            </Grid>
           ))}
-        </div>
+        </Grid>
       </Container>
     </StyledHero>
   );

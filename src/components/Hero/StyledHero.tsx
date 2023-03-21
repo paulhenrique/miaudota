@@ -3,7 +3,7 @@ import { colors } from "../../theme/ThemeProvider";
 
 export const StyledHero = styled(Box)`
   background-color: ${colors.primaryClean};
-  padding-top: 42px;
+  padding-top: 112px;
   padding-bottom: 105px;
   z-index: 2;
   .centeredText {
@@ -12,12 +12,6 @@ export const StyledHero = styled(Box)`
     flex-direction: column;
     gap: 20px;
     margin-bottom: 60px;
-  }
-  .contentItems {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 103px;
-    z-index: 0;
   }
   @keyframes animeRotateVertical {
     0% {

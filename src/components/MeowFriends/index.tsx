@@ -1,4 +1,4 @@
-import { Box, Grid, Link, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import Container from "../Container";
 import { catsData } from "./data";
 import { PurpleText } from "../PurpleText";
@@ -6,6 +6,7 @@ import Tags from "../Tags";
 import { BorderedTopImage } from "../BorderedTopImage";
 import _ from "lodash";
 import { links } from "../../config/links";
+import { EVENTS, appEmitter } from "../../events";
 
 const MeowFriends = () => {
   return (
@@ -74,7 +75,20 @@ const MeowFriends = () => {
                   <br />
                   {cat.birth}
                 </Typography>
-                <Link href="https://www.cpqd.com.br/">Quero saber mais!</Link>
+                <span>
+                  <Button
+                    aria-label={`Abrir mais informações sobre o ${cat.name}`}
+                    variant="text"
+                    onClick={() => {
+                      appEmitter.emit(EVENTS.OPEN_MODAL, {
+                        title: cat.name,
+                        text: cat.alt,
+                      });
+                    }}
+                  >
+                    Quero saber mais!
+                  </Button>
+                </span>
                 <Box display="flex" gap="16px">
                   <Tags tags={cat.tags} />
                 </Box>
