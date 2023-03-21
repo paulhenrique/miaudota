@@ -8,6 +8,7 @@ export const catsData = [
     tags: ["male"],
     image: Cat01,
     alt: "foto de dois gatos. O gato da esquerda tem pelagem curta tigrada e olhos verdes, e o gato à direita é  branco e preto de olhos verdes. Eles estão deitados sobre um fundo rosa salmão e olham para a câmera.",
+    link: "http://adoteumgatinho.com.br/detalhes-gato/17958/zenitsu-e-inosuke",
     points: [
       {
         name: "Zenitsu",
@@ -34,6 +35,7 @@ export const catsData = [
     birth: "Nascido em janeiro/2022",
     tags: ["male", "specialAdoption"],
     image: Cat02,
+    link: "http://adoteumgatinho.com.br/detalhes-gato/17983/princesa-daisy",
     alt: "foto de um gato preto de apenas um olho, que é verde. Ele está sentado ao lado de uma caixa de madeira e olha para a câmera.",
     points: [
       {
@@ -50,6 +52,7 @@ export const catsData = [
   {
     name: "Zaide",
     birth: "Nascida em março/2017",
+    link: "http://adoteumgatinho.com.br/detalhes-gato/17996/focaccia",
     tags: ["female"],
     image: Cat03,
     alt: "foto do rosto de um gato de pelagem tigrada e olhos verdes, olhando para a câmera em um fundo branco.",
